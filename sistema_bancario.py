@@ -65,8 +65,9 @@ while True:
             print("\nPor favor, digite um valor numérico positivo para depósito.\nA operação foi cancelada, tente novamente.\n...")
 
     elif opcao == "e":
-        print("== EXTRATO ==================\n")# sistema de extrato >
-        print(extrato)
+        print("== EXTRATO ==================\n")# sistema de extrato >        
+        print("Não há nenhum registro de operações!\n" if not extrato else extrato) 
+        print(f"Saldo: R$ {saldo:.2f}")
         print("=============================")# sistema de extrato >
     
 
